@@ -25,7 +25,7 @@ public class Ex1
 						break;
 					}
 				}
-				//Input des tires B
+				// Input des tires B
 				for (int i = 0; i < 3; i++)
 				{
 					bTab[i]=sc.nextInt();

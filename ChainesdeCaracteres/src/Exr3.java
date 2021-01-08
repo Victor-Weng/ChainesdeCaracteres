@@ -11,26 +11,27 @@ public class Exr3
 				Scanner sc=new Scanner(System.in);
 				int	L = sc.nextInt(); 
 				sc.nextLine();
-				Object [][] y = new Object [L][1];
+				String [] y= new String [L];
 				
 				
 				for (int i = 0; i < L; i++) 
 				{
-					String z=sc.nextLine();
-					y[i][0]= new String (z);
-				
+					y[i]=sc.nextLine();
+								
 				}
-				int k=0;
-				
+								
 				for (int i = 0; i < L; i++) 
 				{
-					for (int j = 0; j <10; j++) 
+					String[] t=y[i].split(" ");
+					for (int j = 0; j <Integer.parseInt(t[0]); j++) 
 					{
-							
-						a=y[i][0];
-						System.out.println(y[i+2]);
+													
+						System.out.print(t[1]);
+						
 						
 					}
+					System.out.println("");
+					
 					
 				}
 				sc.close();
